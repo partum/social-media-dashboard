@@ -1,0 +1,38 @@
+
+body{
+    font-family: Inter, sans-serif;
+    color: #21212A;
+
+}
+.main{
+    max-width: 1066px;
+    margin:auto;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+align-items: center;
+color: #696A7A;
+;
+}
+.header button{
+    border-radius: 20px;
+    border: none;
+}
+h1{
+    margin-bottom: 14px;
+    color: #21212A;
+}
+.theme-dark{
+    background-color: black;
+}
+.theme-dark h1{
+    color: white;
+}
+.theme-light{
+    background-color: pink;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
