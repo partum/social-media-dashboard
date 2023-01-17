@@ -1,38 +1,138 @@
-
-body{
+body {
     font-family: Inter, sans-serif;
     color: #21212A;
 
 }
-.main{
+
+.main {
     max-width: 1066px;
-    margin:auto;
+    margin: auto;
 }
-.header{
+
+.header {
     display: flex;
     justify-content: space-between;
-align-items: center;
-color: #696A7A;
-;
+    align-items: center;
+    color: #696A7A;
+    ;
 }
-.header button{
+
+.header button {
     border-radius: 20px;
     border: none;
 }
-h1{
+
+h1 {
     margin-bottom: 14px;
     color: #21212A;
 }
-.theme-dark{
-    background-color: black;
+
+.theme-light {
+    background-color: #ffffff;
 }
-.theme-dark h1{
+
+.summary {
+    display: flex;
+    justify-content: space-between;
+    color: #696A7A;
+    margin: -15px;
+
+}
+
+.summary span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F0F3FA;
+    width: 25%;
+    margin: 15px;
+    border-radius: 7px;
+}
+
+.summary .top-border {
+    height: 5px;
+    background-color: deeppink;
+    width: 100%;
+    border-radius: 7px 7px 0 0;
+    margin-top: 0;
+}
+
+.summary span:hover {
+    background: #E1E3F0;
+
+}
+
+.summary span p {
+    margin: 5px 0;
+}
+
+.sum--user {
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.sum--user img {
+    margin-right: 10px;
+}
+
+.sum--number {
+    color: #1A1D26;
+    font-size: large;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.sum--follow {
+    text-transform: uppercase;
+    margin: 0 0;
+}
+
+.sum--change.up {
+    color: #1EB589;
+    font-size: 15px;
+}
+.sum--change.down {
+    color: #DC414C;
+    font-size: 15px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+.decorative{
+    height:230px;
+    position: absolute;
+    z-index: -1;
+    background-color: #F8F9FE;
+    width: 100vw;
+}
+
+/* dark mode things */
+.theme-dark {
+    background: #1D2029;
+
+}
+
+.theme-dark h1,
+.theme-dark .sum--number {
     color: white;
 }
-.theme-light{
-    background-color: pink;
+
+.theme-dark .summary span {
+    background: #252B43;
+
 }
 
+.theme-dark .summary span:hover{
+    background: #333A56;
 
-.attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+}
+.theme-dark .decorative{
+    background-color: #20222F;
+}
